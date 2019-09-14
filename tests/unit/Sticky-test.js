@@ -148,7 +148,7 @@ describe('Sticky', function () {
         expect(outer.className).to.not.contain('released');
 
         // Increase coverage
-        sticky.componentWillReceiveProps();
+        sticky.UNSAFE_componentWillReceiveProps();
     });
 
     it('should call the callback on state change', function () {
